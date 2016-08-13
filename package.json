@@ -1,0 +1,19 @@
+{
+  "name": "starter-node-angular",
+  "main": "server.js",
+  "dependencies": {
+    "argh": "~0.1.4",
+    "banner": "0.0.5",
+    "biguint-format": "^1.0.0",
+    "body-parser": "~1.13.3",
+    "colors": "^1.1.2",
+    "config": "~1.16.0",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "moment": "^2.14.1",
+    "rootpath": "~0.1.2",
+    "stringify-object": "^2.3.1",
+    "urlencode": "^1.1.0",
+    "winston": "~1.0.2"
+  }
+}
