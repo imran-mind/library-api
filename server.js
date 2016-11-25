@@ -1,14 +1,9 @@
 'use strict'; // Always keep it strict!
-/**
- * @author imran.shaikh@47billion.com
- * The entry point for the gateway server. Invokes the app module to initialize the
- * api endpoints(routes).
- */
 
 //To refer different modules irrespective of where we are.
 require('rootpath')();
 // Banner
-require('banner').print('config/banner.txt');
+//require('banner').print('config/banner.txt');
 //Setting max listeners to infinite.
 process.setMaxListeners(0);
 var app = require('./app'),

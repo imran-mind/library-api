@@ -1,8 +1,4 @@
 'use strict'
-/*
- * @author devendra.rathore@47billion.com
- * The file contains all the endpoints existing into the system.
- * */
 
 var express = require('express'),
     path = require('path'),
@@ -24,15 +20,8 @@ module.exports = function (app) {
         })
         .use(bodyParser.urlencoded({extended: false}));
 
-    require('app/db').db(function (err, DB) {
-        app.set('db', DB);
-        console.log('===========>' + DB);
-        var dashboardRoute = require('app/routes/dashboard')(app);
-        var studentRoute = require('app/routes/student')(app);
-        var bookRoute = require('app/routes/book')(app);
-        app
-            .use('/api/v1/dashboard', dashboardRoute)
-            .use('/api/v1/students', studentRoute)
-            .use('/api/v1/books',bookRoute)
-    });
+    var dashboardRoute = require('app/routes/dashboard')();
+
+    app
+        .use('/api', dashboardRoute);
 };

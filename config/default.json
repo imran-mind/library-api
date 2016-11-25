@@ -4,14 +4,12 @@
     "port": "9999"
   },
   "mongo": {
-    "url": "mongodb://localhost:27017/library",
+    "url": "mongodb://localhost:27017/nazaratest",
     "studentCollection": "students",
-    "bookCollection":"books"
-
+    "bookCollection": "books"
   },
   "logger": {
     "level": "info",
-    "filename": "n-gateway-dev.log"
+    "filename": ""
   }
-
 }
