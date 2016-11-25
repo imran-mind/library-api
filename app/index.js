@@ -1,10 +1,4 @@
 'use strict';
-/**
- * @author imran.shaikh@47billion.com
- * The file specifies all the configurations for different api endpoints.
- */
-
-//To refer different modules irrespective of where we are.
 require('rootpath')();
 var express = require('express'),
     app = express();
