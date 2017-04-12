@@ -1,17 +1,19 @@
 {
   "app": {
     "host": "0.0.0.0",
-    "port": "9999"
+    "port": "9090"
   },
   "mongo": {
-    "url": "mongodb://localhost:27017/library",
-    "studentCollection": "students",
-    "bookCollection":"books"
-
+    "url": "mongodb://localhost:27017/bhrum",
+    "loginCollection": "login",
+    "ftaddCollection": "ftadd"
   },
   "logger": {
     "level": "info",
     "filename": "n-gateway-dev.log"
+  },
+  "token": {
+    "secret": "----<> super secret key <>-----",
+    "expiry": 36000
   }
-
 }

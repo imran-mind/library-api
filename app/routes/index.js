@@ -27,12 +27,10 @@ module.exports = function (app) {
     require('app/db').db(function (err, DB) {
         app.set('db', DB);
         console.log('===========>' + DB);
-        var dashboardRoute = require('app/routes/dashboard')(app);
-        var studentRoute = require('app/routes/student')(app);
-        var bookRoute = require('app/routes/book')(app);
+        var loginRoute = require('app/routes/login')(app);
+        var ftaddRoute = require('app/routes/ftadd')(app);
         app
-            .use('/api/v1/dashboard', dashboardRoute)
-            .use('/api/v1/students', studentRoute)
-            .use('/api/v1/books',bookRoute)
+            .use('/api/v1/login', loginRoute)
+            .use('/api/v1/ftadd', ftaddRoute)
     });
 };
